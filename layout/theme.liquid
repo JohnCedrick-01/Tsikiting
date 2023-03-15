@@ -236,9 +236,24 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" />
+
+{% if settings.enable_announcement %}
+  <div id="announcement-bar">
+    {% if settings.announcement_option == 'static' %}
+      <p>{{ settings.announcement_text }}</p>
+    {% elsif settings.announcement_option == 'marquee' %}
+      <marquee>{{ settings.announcement_text }}</marquee>
+    {% endif %}
+  </div>
+{% endif %}
+
+
   </head>
 
-  <body class="gradient">
+<body {% if template == 'index' %}id="template-index"{% endif %} class="gradient {% if template == 'index' %}template-index{% endif %}">
+    {% section 'sales-popup-notifications' %}
+    
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -293,5 +308,10 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+  <!-- make sure to read up on the Flickity licenses -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    
   </body>
 </html>

@@ -6,23 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Discover Endless Fun and Excitement",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Shop Our Wide Range of Toys Online Now!",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -34,167 +34,187 @@
         "text",
         "button"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "image": "shopify:\/\/shop_images\/bg3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "a1cf4a4b-a081-47f5-93f8-96cb95640b51": {
+      "type": "collection-slider",
+      "disabled": true,
+      "settings": {
+        "title": "Featured Collection",
+        "collection": "frontpage",
+        "product_count": 12
+      }
+    },
+    "899460f4-4510-4475-a18d-d5054108f920": {
+      "type": "newsletter",
+      "disabled": true,
       "blocks": {
-        "heading": {
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
+            "heading": "Let's play together!"
+          }
+        },
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>\"Stay in the loop with exclusive offers and updates - sign up for our newsletter today!\"<\/strong><\/p>"
+          }
+        },
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-0",
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-1",
+        "template--18168811258172__899460f4-4510-4475-a18d-d5054108f920-167774020089d03e7e-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true
+      }
+    },
+    "77aba918-6e31-4fb2-ae6c-4a46d32d5214": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product 1",
             "heading_size": "h1"
           }
         },
-        "text": {
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/frontpage"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-0",
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-1",
+        "template--18168811258172__77aba918-6e31-4fb2-ae6c-4a46d32d5214-167774267927fdc6a3-2"
+      ],
+      "custom_css": [
+        ".image-with-text__content {border-radius: 5%; padding: 17%;}",
+        ".image-with-text__media--medium {border-radius: 5%;}"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
+        "image": "shopify:\/\/shop_images\/pexels-ketut-subiyanto-4934412_50.jpg",
+        "height": "medium",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
+    "c98036b1-e049-40fe-ba06-cbe05b575a26": {
+      "type": "parallax-featured-product",
+      "disabled": true,
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "img_product": "shopify:\/\/shop_images\/pexels-polesie-toys-5997705.jpg",
+        "txt_button": "View more",
+        "featured_product_handle": "baby-trolly"
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "272fd632-8a89-4db3-8083-7bbfc84a21ec": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/pexels-polesie-toys-5997705.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/pexels-karolina-grabowska-8909657.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "column3": {
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/pexels-rodnae-productions-6849274.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ea44f0eb-8e64-4641-9920-0772c02822cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-polesie-toys-6138276.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-1",
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-0",
+        "template--18168811258172__272fd632-8a89-4db3-8083-7bbfc84a21ec-167842480796567048-2",
+        "ea44f0eb-8e64-4641-9920-0772c02822cb"
+      ],
+      "custom_css": [
+        "H2{text-align:CENTER;}"
       ],
       "settings": {
-        "title": "",
+        "title": "OUR BEST SELLING PRODUCTS ONLINE",
         "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
         "column_alignment": "center",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -202,10 +222,10 @@
   },
   "order": [
     "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "a1cf4a4b-a081-47f5-93f8-96cb95640b51",
+    "899460f4-4510-4475-a18d-d5054108f920",
+    "77aba918-6e31-4fb2-ae6c-4a46d32d5214",
+    "c98036b1-e049-40fe-ba06-cbe05b575a26",
+    "272fd632-8a89-4db3-8083-7bbfc84a21ec"
   ]
 }
